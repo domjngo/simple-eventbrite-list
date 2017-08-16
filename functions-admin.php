@@ -10,6 +10,7 @@ function sebl_settings() {
 
 function sebl_settings_data() {
 	register_setting('sebl_settings_group', 'sebl_token');
+    register_setting('sebl_settings_group', 'sebl_organiser');
 }
 
 function sebl_settings_page()
@@ -17,9 +18,9 @@ function sebl_settings_page()
 	// admin
 	?>
 	<div class="wrap">
-		<h2>Eventbrite settings</h2>
+		<h2>Simple Eventbrite List settings</h2>
 
-		<h3>Eventbrite API token</h3>
+		<h3>Eventbrite Organiser ID and API token</h3>
 
 		<a href="https://www.eventbrite.com/developer/v3/api_overview/authentication/" target="_blank">Eventbrite API token documentation</a>
 
@@ -27,6 +28,10 @@ function sebl_settings_page()
 			<?php settings_fields( 'sebl_settings_group' ); ?>
 			<?php do_settings_sections( 'sebl_settings_group' ); ?>
 			<table class="form-table">
+                <tr valign="top">
+                    <th scope="row"><label for="sebl_organiser">Organiser ID</label></th>
+                    <td><input type="text" name="sebl_organiser" value="<?php echo esc_attr( get_option('sebl_organiser') ); ?>" /></td>
+                </tr>
 				<tr valign="top">
 					<th scope="row"><label for="sebl_token">API token</label></th>
 					<td><input type="text" name="sebl_token" value="<?php echo esc_attr( get_option('sebl_token') ); ?>" /></td>

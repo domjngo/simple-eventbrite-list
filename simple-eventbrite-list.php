@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Simple Eventbrite List
  * Plugin URI: https://github.com/domingobishop/simple-eventbrite-list
- * Description: Simple Eventbrite List plugin displays a list of events in a post or page using the [simple-eventbrite] shortcode.
- * Version: 1.0
+ * Description: Simple Eventbrite List plugin displays a list of events in a post or page using the [simple-eventbrite] shortcode from your Eventbrite account.
+ * Version: 0.1 beta
  * Author: Chris Bishop
  * Author URI: https://github.com/domingobishop
  * License: GPL2

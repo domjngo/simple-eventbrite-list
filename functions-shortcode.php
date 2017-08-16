@@ -8,13 +8,12 @@
 function sebl_shortcode( $atts ) {
 
 	$a = shortcode_atts( array(
-		'organiser' => 2226699547,
 		'numberevents' => 6,
 		'category' => ''
 	), $atts);
 
 	$token = get_option('sebl_token');
-	$organiser = $a['organiser'];
+	$organiser = get_option('sebl_organiser');
 	$number = $a['numberevents'];
 	$category = '';
 
