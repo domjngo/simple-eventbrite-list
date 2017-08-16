@@ -154,12 +154,10 @@ class Simple_Eventbrite_List {
 
 			$obj = json_decode( $json );
 
-			if ( $obj->status_code == 400 || $obj->status_code == 401 ) {
-
-				$error = $obj->error_description;
+			if ( isset($obj->error_description) ) {
 
 				$html .= '<h2>API error ' . $obj->status_code . '</h2>';
-				$html .= '<p>' . $error . '</p>';
+				$html .= '<p>' . $obj->error_description . '</p>';
 
 			} else {
 
