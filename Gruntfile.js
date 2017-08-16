@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
 
-    // Project configuration.
+    // Project configuration
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         sass: {
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    // Default task(s).
+    // Default task(s)
     grunt.registerTask('default', [
         'sass',
         'cssmin'
