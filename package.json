@@ -1,9 +1,10 @@
 {
-  "name": "tna-home",
+  "name": "simple-eventbrite-list",
   "version": "0.1.0",
+  "private": true,
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-cssmin": "^0.13.0"
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0"
   }
 }

@@ -2,22 +2,18 @@
 /**
  * Shortcode
  *
- * Categories
- * 113 Community
- * 115 Family & Education
  *
  */
 
-function tna_ebapi_shortcode( $atts ) {
+function sebl_shortcode( $atts ) {
 
 	$a = shortcode_atts( array(
-		'organiser' => 2226699547,
 		'numberevents' => 6,
 		'category' => ''
 	), $atts);
 
-	$token = get_option('tna_ebapi_token');
-	$organiser = $a['organiser'];
+	$token = get_option('sebl_token');
+	$organiser = get_option('sebl_organiser');
 	$number = $a['numberevents'];
 	$category = '';
 
