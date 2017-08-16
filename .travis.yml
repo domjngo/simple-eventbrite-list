@@ -1,0 +1,22 @@
+language:
+  - php
+  - node_js
+
+php:
+  - 5.5
+
+node_js:
+  - 4.4.5
+
+install:
+  - composer require --dev phpunit/phpunit
+  - npm install -g grunt-cli
+  - npm install
+
+script:
+  - phpunit tests/FunctionsTest.php
+
+notifications:
+  slack:
+    rooms:
+      - tna-digital:C2GnodnLsxhwwGvr0xAcajzc#code-builds

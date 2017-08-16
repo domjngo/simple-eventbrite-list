@@ -1,0 +1,68 @@
+
+#tna_ebapi_events {
+
+  ul {
+    padding: 0;
+  }
+  ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.8em;
+    list-style: none none;
+    margin-bottom: 0.8em;
+  }
+  ul li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  .event-img, .event-text {
+    float: left;
+  }
+  .event-img {
+    width: 30%;
+    margin-right: 3%;
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+    }
+    a {
+      display: block;
+    }
+    .online-event {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      color: #fff;
+      background-color: #008484;
+      span {
+        padding: 5px;
+      }
+    }
+  }
+  .event-text {
+    width: 66%;
+    p, h4 {
+      margin: 0;
+    }
+  }
+  .event-status {
+    color: #CB0D07;
+  }
+  @media (max-width: 640px) {
+    .event-img {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .event-text {
+      width: 100%;
+    }
+  }
+}
