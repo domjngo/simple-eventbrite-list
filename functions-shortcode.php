@@ -13,7 +13,7 @@ function sebl_shortcode( $atts ) {
 		'category' => ''
 	), $atts);
 
-	$token = get_option('tna_ebapi_token');
+	$token = get_option('sebl_token');
 	$organiser = $a['organiser'];
 	$number = $a['numberevents'];
 	$category = '';
