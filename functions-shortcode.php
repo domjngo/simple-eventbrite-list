@@ -2,13 +2,10 @@
 /**
  * Shortcode
  *
- * Categories
- * 113 Community
- * 115 Family & Education
  *
  */
 
-function tna_ebapi_shortcode( $atts ) {
+function sebl_shortcode( $atts ) {
 
 	$a = shortcode_atts( array(
 		'organiser' => 2226699547,

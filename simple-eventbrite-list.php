@@ -16,9 +16,9 @@ include 'functions-admin.php';
 include 'functions-eventbrite.php';
 
 // add_action
-add_action('wp_enqueue_scripts', 'tna_ebapi_css');
-add_action('admin_menu', 'tna_ebapi_settings');
-add_action('admin_init', 'tna_ebapi_settings_data');
+add_action('wp_enqueue_scripts', 'sebl_css');
+add_action('admin_menu', 'sebl_settings');
+add_action('admin_init', 'sebl_settings_data');
 
-// Shortcode [tna-eventbrite]
-add_shortcode('tna-eventbrite', 'tna_ebapi_shortcode');
+// Shortcode [simple-eventbrite]
+add_shortcode('simple-eventbrite', 'sebl_shortcode');
