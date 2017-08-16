@@ -168,7 +168,7 @@ class Simple_Eventbrite_List {
 		$url  = $this->url( $organiser, $category, $token );
 		$json = $this->get_json( $url );
 
-		$html = '<div id="tna_ebapi_events" class="track-outbound"><ul class="tna-event-list">';
+		$html = '<div id="sebl_events"><ul class="event-list">';
 
 		if ( $json ) {
 
