@@ -22,6 +22,7 @@ function sebl_settings_page()
 
 		<h3>Eventbrite Organiser ID and API token</h3>
 
+        <a href="https://www.eventbrite.com/developer/v3/quickstart/" target="_blank">Eventbrite API quick start documentation</a><br>
 		<a href="https://www.eventbrite.com/developer/v3/api_overview/authentication/" target="_blank">Eventbrite API token documentation</a>
 
 		<form method="post" action="options.php" novalidate="novalidate">
